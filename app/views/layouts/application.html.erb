@@ -1,7 +1,8 @@
+<% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title><%= yield(:title) %> | Welcome, Techladies! </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,8 +11,10 @@
 
 <div class="header">
      <div class="row">
-        <div class="col-xs-6"><%= Welcome! %></div>
-        <div class="col-xs-1"><%= link_to 'Blog', articles_path, class: 'btn btn-default btn-lg' %></div>
+        <div class="col-xs-6"><%= link_to 'A Techladies Project', root_path, class: 'fontsforweb_fontid_32957' %></div>
+        <div class="col-xs-2"><%= link_to 'About Me', aboutme_path, id: 'font_buttons', class: 'btn btn-default btn-lg' %></div>
+        <div class="col-xs-2"><%= link_to 'Contact', contact_path, id: 'font_buttons', class: 'btn btn-default btn-lg' %></div>
+        <div class="col-xs-2"><%= link_to 'Blog', articles_path, id: 'font_buttons', class: 'btn btn-default btn-lg' %></div>
      </div>
 </div>
 
@@ -23,9 +26,11 @@
     </div>
 </div>
 
-<div class="container">
+
+
+<div class="container-fluid" style="max-width:900px">
     <div class="row">
-        <div id="main-content" class="col-xs-10">
+        <div id="main-content" class="col-xs-10" style="padding-left: 5px">
             <%= yield %>
         </div>
         <div class="col-xs-2">

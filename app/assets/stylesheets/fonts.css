@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Dreamer1';
+	src: url('./Dreamer1.eot');
+	src: local('Dreamer1'), url('./Dreamer1.woff') format('woff'), url('./Dreamer1.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_32957">Text with this font applied</p> */
+
+@font-face {
+	font-family: 'ITCKRIST';
+	src: local('ITCKRIST'), url('./ITCKRIST.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'GABRIOLA';
+	src: local('GABRIOLA'), url('./GABRIOLA.TTF') format('truetype');
+}
+
+.fontsforweb_fontid_32957 {
+	font-family: 'Dreamer1' !important;
+	font-size: 54px;
+	font-weight: bolder;
+}
+
+#font_buttons {
+	font-family: 'GABRIOLA' !important;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Font downloaded from FontsForWeb.com */
