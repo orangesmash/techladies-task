@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: 437501e2789dc764c58e57cad0897854c186fa82
+  specs:
+    ckeditor (4.2.4)
+      cocaine
+      orm_adapter (~> 0.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -46,6 +54,13 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
+    carrierwave (1.1.0)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
+    climate_control (0.2.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -75,11 +90,13 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mini_magick (4.7.2)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    orm_adapter (0.5.0)
     rack (1.6.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -152,9 +169,12 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.3.7)
   byebug
+  carrierwave
+  ckeditor!
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  mini_magick
   rails (= 4.2.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -165,4 +185,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.14.4
+   1.15.1
